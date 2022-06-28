@@ -72,4 +72,4 @@ class Rectangle:
             if i < self.__height:
                 rectangle += '\n'
             i += 1
-        return 
+        return rectangle
