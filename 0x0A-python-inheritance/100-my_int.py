@@ -10,4 +10,3 @@ class MyInt(int):
 
     def __ne__(self, other):
         return int(str(self)) == other
-
