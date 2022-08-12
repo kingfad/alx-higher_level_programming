@@ -1,5 +1,2 @@
--- script that creates a table
-CREATE TABLE IF NOT EXISTS first_table(
-	id INT,
-	name VARCHAR(256)
-);
+-- creates a table called first_table in my current DB
+CREATE TABLE IF NOT EXISTS `first_table` (`id` INT, `name` VARCHAR(256));
