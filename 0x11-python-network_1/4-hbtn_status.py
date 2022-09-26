@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """
-Python script that fetches https://intranet.hbtn.io/status
+requests model
 """
-import requests
 
-if __name__ == "__main__":
-    r = requests.get('https://intranet.hbtn.io/status')
+if __name__ == '__main__':
+    import requests
+    html = requests.get('https://alx-intranet.hbtn.io/status')
     print("Body response:")
-    print("\t- type:", type(r.text))
-    print("\t- content:", r.text)
+    print("\t- type: {}".format(html.text.__class__))
+    print("\t- content: {}".format(html.text))
